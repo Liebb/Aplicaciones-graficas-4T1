@@ -1,0 +1,71 @@
+.calendarContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    margin: 50px;
+}
+.calendarContainer__month{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(auto, 1fr);
+}
+.calendarContainer__month > h5, .calendarContainer__month > p {
+    text-align: center;
+}
+.calendarContainer__header {
+    margin: 0;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    background-color: rgb(167, 167, 150);
+    padding: 10px;
+}
+
+.calendarContainer__month .startDayJanuary{
+    grid-column-start: 7;
+}
+.calendarContainer__month .startDayFebruary{
+    grid-column-start: 3;
+}
+.calendarContainer__month .startDayMarch{
+    grid-column-start: 3;
+}
+.calendarContainer__month .startDayApril{
+    grid-column-start: 6;
+}
+.calendarContainer__month .startDayMay{
+    grid-column-start: 1;
+}
+.calendarContainer__month .startDayJune{
+    grid-column-start: 4;
+}
+.calendarContainer__month .startDayJuly{
+    grid-column-start: 6;
+}
+.calendarContainer__month .startDayAugust{
+    grid-column-start: 3;
+}
+.calendarContainer__month .startDaySeptember{
+    grid-column-start: 5;
+}
+.calendarContainer__month .startDayOctober{
+    grid-column-start: 7;
+}
+.calendarContainer__month .startDayNovember{
+    grid-column-start: 3;
+}
+.calendarContainer__month .startDayDecember{
+    grid-column-start: 5;
+}
+.freeDays {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50px;
+    padding: 0;
+}
+.freeDays:hover{
+    background-color: #ec5f5f;
+    cursor: pointer;
+}
