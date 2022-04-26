@@ -1,9 +1,24 @@
+html{
+    background-color: black;
+    color: white;
+}
+.WelcomeTitle {
+    text-align: center;
+    display: flex;
+    margin-left: 25%;
+}
+.WelcomeTitle > img {
+    width: 50px;
+    object-fit: contain;
+    margin-left: 10px;
+}
 .calendarContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 40px;
     margin: 50px;
+    border-bottom: 2px dashed rgb(214, 80, 18);
 }
 .calendarContainer__month{
     display: grid;
@@ -19,7 +34,7 @@
     grid-column-start: 1;
     grid-column-end: 8;
     grid-row-start: 1;
-    background-color: rgb(167, 167, 150);
+    background-color: rgb(214, 80, 18);
     padding: 10px;
 }
 
@@ -68,4 +83,17 @@
 .freeDays:hover{
     background-color: #ec5f5f;
     cursor: pointer;
+}
+.holidays {
+ margin:0 25%;   
+}
+.holidays span {
+    color: #ec5f5f;
+}
+.holidays h3 {
+    text-align: center;
+}
+.holidays .holidays__Nation {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
 }
